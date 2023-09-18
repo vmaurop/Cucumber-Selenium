@@ -1,13 +1,12 @@
 package com.vmavropo.utils;
 
-import com.netcompany.intrasoft.utils.common.*;
+import com.vmavropo.utils.common.*;
 import com.vmavropo.utils.config.EnvDataConfig;
 import com.vmavropo.utils.config.ResourcesConfig;
 import com.vmavropo.utils.factory.ContextFactory;
 import com.vmavropo.utils.factory.PageObjectFactory;
 import com.vmavropo.utils.factory.WebDriverFactory;
 import com.vmavropo.utils.factory.WebServiceFactory;
-import com.vmavropo.utils.common.*;
 
 import java.util.Objects;
 
