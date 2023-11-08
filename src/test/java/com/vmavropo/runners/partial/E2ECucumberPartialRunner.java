@@ -7,8 +7,8 @@ import org.testng.annotations.DataProvider;
 @CucumberOptions(plugin = {"pretty", "json:target/cucumber_partial.json", "junit:target/cucumber-junit-report_partial.xml",
         "rerun:target/failed_scenarios/failed_partial_once.txt"},
         features = {"classpath:features"},
-        tags = "",
-        glue = {"com.netcompany.intrasoft.stepdefs"},
+        tags = "(not @Parallel) and (not @Ignored)",
+        glue = {"com.vmavropo.stepdefs"},
         monochrome = true)
 public class E2ECucumberPartialRunner extends AbstractTestNGCucumberTests {
 

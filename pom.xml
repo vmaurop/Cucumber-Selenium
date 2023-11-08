@@ -181,7 +181,7 @@
                                     <threadCount>${threads}</threadCount>
                                     <includes>
                                         <include>
-                                            com/netcompany/intrasoft/runners/parallel/E2ECucumberParallelRunner.java
+                                            com/vmavropo/runners/parallel/E2ECucumberParallelRunner.java
                                         </include>
                                     </includes>
                                     <properties>
@@ -259,7 +259,7 @@
                                 <configuration>
                                     <includes>
                                         <include>
-                                            com/netcompany/intrasoft/runners/partial/E2ECucumberPartialRunner.java
+                                            com/vmavropo/runners/partial/E2ECucumberPartialRunner.java
                                         </include>
                                     </includes>
                                     <properties>

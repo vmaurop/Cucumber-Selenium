@@ -8,7 +8,7 @@ import org.testng.annotations.DataProvider;
         "rerun:target/failed_scenarios/failed_parallel_once.txt", "timeline:target/timeline"},
         features = {"classpath:features"},
         tags = "(not @Linear) and (not @Ignored)",
-        glue = {"com.netcompany.intrasoft.stepdefs"},
+        glue = {"com.vmavropo.stepdefs"},
         monochrome = true)
 public class E2ECucumberParallelRunner extends AbstractTestNGCucumberTests {
 
