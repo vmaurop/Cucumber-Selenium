@@ -25,7 +25,6 @@ public class Hook {
     @Before(value = "@API", order = 1)
     public void beforeTest(Scenario scenario) {
         test.context().setScenario(scenario);
-        test.context().setUiTest(false);
     }
 
     @After(value = "@UI", order = 1)
