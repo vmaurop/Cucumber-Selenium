@@ -20,7 +20,7 @@
         <maven-model.version>3.8.5</maven-model.version>
         <cucumber.version>7.2.3</cucumber.version>
         <selenium.version>4.4.0</selenium.version>
-        <webdriver-manager.version>5.5.0</webdriver-manager.version>
+        <webdriver-manager.version>5.7.0</webdriver-manager.version>
         <rest-assured.version>4.4.0</rest-assured.version>
         <json.version>20211205</json.version>
         <hamcrest.version>2.2</hamcrest.version>

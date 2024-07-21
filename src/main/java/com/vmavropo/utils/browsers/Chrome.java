@@ -13,6 +13,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 
 public class Chrome {
 
@@ -50,7 +51,7 @@ public class Chrome {
         if (envDataConfig.getDriverMode().equalsIgnoreCase("manual")) {
             System.setProperty("webdriver.chrome.driver", resourcesConfig.getChromeDriver());
         } else {
-            WebDriverManager.chromedriver().setup();
+            WebDriverManager.chromedriver().clearDriverCache().setup();
         }
 
         HashMap<String, Object> chromePrefs = new HashMap<>();
@@ -74,7 +75,7 @@ public class Chrome {
         options.addArguments("--no-sandbox"); // Bypass OS security model
         options.addArguments("--ignore-certificate-errors"); //Suppressed Certificate errors
         options.setCapability(ChromeOptions.CAPABILITY, options);
-        options.setCapability("chrome.switches", Arrays.asList("incognito"));
+        options.setCapability("chrome.switches", List.of("incognito"));
         options.addArguments("--remote-allow-origins=*"); //Allows remote logging to suppress problematic Chrome v111
         return options;
     }
