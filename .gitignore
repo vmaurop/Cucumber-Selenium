@@ -38,4 +38,3 @@ nbactions.xml
 .run
 /.idea/
 debug.log
-/src/test/resources/drivers/*.exe
